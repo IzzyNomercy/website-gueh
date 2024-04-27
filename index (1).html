@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url(https://m.media-amazon.com/images/S/pv-target-images/405fb170eaf0f269465e13f863568b8b7244ac8aa143c32a30c02f913aacd79b.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            min-width: 100px;
+        }
+    </style>
+    <div class="container">
+        <h1 align="center"> Formulir Pendaftaran</h1>
+        <table border="1" align="center">
+            <form action="process_form.php" method="post"></form>
+            <tr class="pe">
+                <td align="center">Nama</td>
+                <td><input type="text" name="nama" /></td>
+            </tr>
+            <tr class="pe">
+                <td align="center">Jenis Kelamin</td>
+                <td><select name="jk">
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select></td>
+            </tr>
+            <tr class="pe">
+                <td align="center">Agama</td>
+                <td> <input type="radio" name="hobby" value="Islam">Islam</option><br /> <input type="radio"
+                        name="hobby" value="Islam">Katholik</option><br /> <input type="radio" name="hobby"
+                        value="Islam">Protestan
+                    </option><br /> <input type="radio" name="hobby" value="Islam">Hindu
+                    </option><br /> <input type="radio" name="hobby" value="Islam">Budha</option>
+                </td>
+            </tr>
+            <tr class="pe">
+                <td align="center">Hobby</td>
+                <td><input type="checkbox" name="hobby" value="Browsing" />Browsing<br /> <input type="checkbox"
+                        name="hobby" value="Browsing" />Game<br /> <input type="checkbox" name="hobby"
+                        value="Browsing" />Olahraga </td>
+            </tr>
+            <tr class="pe">
+                <td align="center">Alamat</td>
+                <td><textarea name="alamat"></textarea></td>
+            </tr>
+            <tr class="pe">
+                <td align="center"><input type="submit" value="Kirim" /></td>
+                <td align="center"><input type="reset" value="Batal" /></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
